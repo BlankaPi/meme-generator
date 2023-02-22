@@ -1,0 +1,128 @@
+@use "../../sass/abstracts" as *;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include background(0.1);
+    padding: 3rem;
+    padding-bottom: 1rem;
+
+    &-input {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 3rem;
+        margin-bottom: 1.5rem;
+
+        input {
+            padding: 0.5rem;
+            width: 100%;
+            @include background(0.2);
+            text-indent: 5px;
+
+            &:focus {
+                background: rgba($color-white, 0.5);
+                box-shadow: 0 8px 32px 10px rgba(20, 25, 87, 0.37);
+            }
+        }
+    }
+
+    button {
+        padding: 0.5rem;
+        width: 100%;
+        @include background(0.6);
+        transition: $transition;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+            margin-left: 1rem;
+        }
+
+        &:hover {
+            background: rgba($color-white, 0.9);
+            box-shadow: 0 8px 32px 10px rgba(20, 25, 87, 0.37);
+        }
+    }
+
+    &-img {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 3rem;
+        position: relative;
+
+        img {
+            width: 100%;
+            margin: auto;
+            display: block;
+        }
+
+        .meme--text {
+            position: absolute;
+            width: 80%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 15px 0;
+            padding: 0 5px;
+            font-family: $font-impact;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 1.5px;
+            text-shadow:
+                2px 2px 0 #000,
+                -2px -2px 0 #000,
+                2px -2px 0 #000,
+                -2px 2px 0 #000,
+                0 2px 0 #000,
+                2px 0 0 #000,
+                0 -2px 0 #000,
+                -2px 0 0 #000,
+                2px 2px 5px #000;
+        }
+
+        .bottom {
+            bottom: 0;
+        }
+
+        .top {
+            top: 0;
+        }
+    }
+
+    a {
+        color: rgba($color-white, 0.75);
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-input {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .form {
+        padding: 1.5rem;
+        padding-bottom: 0.25rem;
+    }
+
+    .form-img .meme--text {
+        font-size: 1.5rem;
+    }
+
+    .form a {        
+        margin-top: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 1.5rem;
+    }
+}

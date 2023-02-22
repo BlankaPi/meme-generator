@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+
+
+body {
+    background-image: $bg-gradient;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid; 
+    justify-content: center;   
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+#root {
+    margin: 6rem auto;
+    max-width: 750px;
+    position: relative;
+}
+
+@media screen and (max-width: 1025px) {
+    #root {
+        margin: 6rem 5vw;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #root {
+        min-width: 300px;        
+    }
+}

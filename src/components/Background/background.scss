@@ -1,0 +1,55 @@
+@use "../../sass/abstracts" as *;
+
+@mixin emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: visible;
+
+    .bg1 {
+        position: absolute;
+
+        @include circle(500px);
+        top: -150px;
+        left: -180px;
+    }
+
+    .bg2 {
+        position: absolute;
+
+        @include circle(300px);
+        top: -200px;
+        right: -100px;
+
+        @include emoji();
+
+        svg {
+            color: rgba($color-white, 0.7);
+            font-size: 5rem;
+        }
+    }
+
+    .bg3 {
+        position: absolute;
+
+        @include circle(400px);
+        top: 300px;
+        right: -250px;
+
+        @include emoji();
+
+        svg {
+            font-size: 18rem;
+            color: rgba($color-white, 0.5);
+        }
+    }
+}

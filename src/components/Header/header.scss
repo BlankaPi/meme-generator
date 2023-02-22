@@ -1,0 +1,44 @@
+@use "../../sass/abstracts" as *;
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    padding: 10px 20px;
+    @include background(0.3);
+
+    div {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        flex: 0.8;
+    }
+
+    svg {
+        height: 100%;
+        margin-right: 10px;
+        font-size: 2.5rem;
+        align-items: center;
+    }
+
+    h4 {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    header div {
+        width: 100%;
+    }
+
+    header div,
+    h4 {
+        flex: unset;
+    }
+}
