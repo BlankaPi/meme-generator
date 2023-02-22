@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/BlankaPi/meme-generator/static/css/main.808ba2ba.css",
-    "main.js": "/BlankaPi/meme-generator/static/js/main.fe461880.js",
-    "index.html": "/BlankaPi/meme-generator/index.html",
-    "main.808ba2ba.css.map": "/BlankaPi/meme-generator/static/css/main.808ba2ba.css.map",
-    "main.fe461880.js.map": "/BlankaPi/meme-generator/static/js/main.fe461880.js.map"
+    "main.css": "/meme-generator/static/css/main.808ba2ba.css",
+    "main.js": "/meme-generator/static/js/main.fe461880.js",
+    "index.html": "/meme-generator/index.html",
+    "main.808ba2ba.css.map": "/meme-generator/static/css/main.808ba2ba.css.map",
+    "main.fe461880.js.map": "/meme-generator/static/js/main.fe461880.js.map"
   },
   "entrypoints": [
     "static/css/main.808ba2ba.css",
