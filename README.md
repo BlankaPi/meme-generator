@@ -2,5 +2,5 @@ React.js meme-generator
 
 Live site: https://blankapi.github.io/meme-generator/
 
-![meme-generator](https://user-images.githubusercontent.com/111786704/220740758-86d4f769-8cca-4e13-a8d3-ca2ac1cac20c.JPG)
+![meme-generator](https://user-images.githubusercontent.com/111786704/221211784-3a49db88-8746-410f-89d9-058256f8f192.JPG)
 API: https://imgflip.com/api
